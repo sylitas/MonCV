@@ -1,0 +1,411 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  // The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+  title Sylitas
+  //
+    =====================================================
+    CSS Stylesheets
+    =====================================================
+  link(rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css')
+  link(rel='stylesheet' type='text/css' href='css/linea.css')
+  link(rel='stylesheet' type='text/css' href='css/ionicons.min.css')
+  link(rel='stylesheet' type='text/css' href='css/owl.carousel.css')
+  link(rel='stylesheet' type='text/css' href='css/magnific-popup.css')
+  link(rel='stylesheet' type='text/css' href='css/style.css')
+//
+  =====================================================
+  Preloader
+  =====================================================
+#preloader
+  .loader
+  .left
+  .right
+.main-content
+  //
+    =====================================================
+    Page Borders
+    =====================================================
+  .page-border.border-left
+  .page-border.border-right
+  .page-border.border-top
+  .page-border.border-bottom
+  //
+    =====================================================
+    Menu Button
+    =====================================================
+  a.menu-btn(href='#')
+    span.lines
+      span.l1
+      span.l2
+      span.l3
+  //
+    =====================================================
+    Menu
+    =====================================================
+  .menu
+    .inner
+      ul.menu-items
+        li
+          a.section-toggle(href='#' data-section='intro')
+            | Home
+        li
+          a.section-toggle(href='#about' data-section='about')
+            | About
+        //
+          <li>
+          <a href='#portfolio' class='section-toggle' data-section='portfolio' >
+          Portfolio
+          </a>
+          </li>
+        li
+          a.section-toggle(href='#contact' data-section='contact')
+            | Contact
+  .animation-block
+  //
+    =====================================================
+    Sections
+    =====================================================
+  .sections
+    //
+      =====================================================
+      Main Section
+      =====================================================
+    section#intro.section.section-main.active
+      .container-fluid
+        .v-align
+          .inner
+            .intro-text
+              h1 My name&apos;s Duy
+              p
+                | I&apos;m a Web Developer and also a Photographer
+              .intro-btns
+                a.btn-custom.section-toggle(href='#about' data-section='about')
+                  | Discover More
+                a.btn-custom.section-toggle(href='#contact' data-section='contact')
+                  | Contact Me
+    //
+      =====================================================
+      About Section
+      =====================================================
+    section#about.section.about-section.border-d
+      .section-block.about-block
+        .container-fluid
+          .section-header
+            h2
+              | I&apos;m a 
+              strong.color Programmer
+          .row
+            .col-md-4
+              ul.info-list
+                li
+                  strong Name:
+                  span Nguy&#x1EC5;n Tu&#x1EA5;n Duy
+                li
+                  strong Job:
+                  span Web Developer
+                li
+                  strong Age:
+                  span 21 Years
+                li
+                  strong Residence:
+                  span Vi&#x1EC7;t Nam
+                li
+                  strong Hometown:
+                  span H&agrave; N&#x1ED9;i
+            .col-md-8
+              .about-text
+                p
+                  | In 2017 I started to learn my bachelor&apos;s degree at University of Science and Technology of Ha Noi (USTH) for 3 years. While still studying, in my second year of university, I did internship at FPT Bank for 3 months, which is mainly working on database there. Then, when I finished all the credits in year 3 (final year), I applied for an internship at HTC-ITC until now.
+                p
+                  | V&agrave;o n&abreve;m 2017, t&ocirc;i b&#x1EAF;t &dstrok;&#x1EA7;u h&#x1ECD;c b&#x1EB1;ng c&#x1EED; nh&acirc;n t&#x1EA1;i tr&#x1B0;&#x1EDD;ng &dstrok;&#x1EA1;i h&#x1ECD;c Khoa H&#x1ECD;c V&agrave; C&ocirc;ng Ngh&#x1EC7; H&agrave; N&#x1ED9;i (USTH) trong v&ograve;ng 3 n&abreve;m. T&ocirc;i xin th&#x1EF1;c t&#x1EAD;p t&#x1EA1;i FPT Bank v&agrave; l&agrave;m t&#x1EA1;i &dstrok;&oacute; trong 3 th&aacute;ng tr&#x1B0;&#x1EDB;c khi n&abreve;m 3 b&#x1EAF;t &dstrok;&#x1EA7;u, c&ocirc;ng vi&#x1EC7;c ch&iacute;nh c&#x1EE7;a t&ocirc;i t&#x1EA1;i &dstrok;&oacute; l&agrave; database. Sau khi t&ocirc;i ho&agrave;n th&agrave;nh h&#x1EBF;t t&iacute;n ch&#x1EC9; trong n&abreve;m 3 t&ocirc;i &dstrok;&atilde; xin l&agrave;m vi&#x1EC7;c t&#x1EA1;i HTC-ITC v&agrave; l&agrave;m vi&#x1EC7;c t&#x1EA1;i &dstrok;&oacute; t&#x1EDB;i gi&#x1EDD; v&#x1EDB;i t&#x1B0; c&aacute;ch th&#x1EF1;c t&#x1EAD;p sinh.
+              .about-btns
+                p Fell free to
+                a.btn-custom.btn-color.btn-custom.section-toggle(href='#contact' data-section='contact')
+                  | Contact Me
+      .section-block.services-block
+        .container-fluid
+          .section-header
+            h2
+              | My 
+              strong.color Hobbies
+          .row
+            .col-md-6
+              .service
+                .icon
+                  i.icon-basic-photo
+                .content
+                  h4 Photography
+                  p
+                    | Because of having a Pentax K-5 with lens macro, i&apos;d like portrait and food photography than anything else
+            .col-md-6
+              .service
+                .icon
+                  i.icon-basic-keyboard
+                .content
+                  h4 Programming
+                  p
+                    | I can using some progamming like C, C++, Java, Python, PHP, Javascript. However, designing something which is logically, wonderful and beautiful is my dream job. That is the reason why i forcus more on PHP and Javascript. Some other make-up language like HTML, PUG, CSS that help me a lot when doing at front end.
+      .section-block.skills-block
+        .container-fluid
+          .section-header
+            h2
+              | My 
+              strong.color Skills
+          .row
+            .col-md-6
+              .skill
+                h4 HTML/CSS
+                .bar
+                  .percent(style='width:50%;')
+              .skill
+                h4 php
+                .bar
+                  .percent(style='width:60%;')
+              .skill
+                h4 jQuery
+                .bar
+                  .percent(style='width:40%;')
+            .col-md-6
+              .skill
+                h4 JavaScript
+                .bar
+                  .percent(style='width:70%;')
+              .skill
+                h4 WordPress
+                .bar
+                  .percent(style='width:40%;')
+              .skill
+                h4 NodeJS
+                .bar
+                  .percent(style='width:65%;')
+    //
+      =====================================================
+      Portfolio Section
+      =====================================================
+    //
+      <section id='portfolio' class='section portfolio-section border-d' >
+      <div class='section-block portfolio-block' >
+      <div class='container-fluid' >
+      <div class='section-header' >
+      <h2>My <strong class='color' >Works</strong></h2>
+      </div>
+      <ul class='portfolio-filters' >
+      <li>
+      <a href='#' class='active' data-group='all' >
+      All
+      </a>
+      </li>
+      <li>
+      <a href='#' data-group='web' >
+      Web
+      </a>
+      </li>
+      <li>
+      <a href='#' data-group='tech' >
+      Tech
+      </a>
+      </li>
+      <li>
+      <a href='#' data-group='photography' >
+      Photography
+      </a>
+      </li>
+      </ul>
+      <ul class='portfolio-items' >
+      <li data-groups='["web","tech"]' >
+      <div class='inner' >
+      <img src='img/portfolio/1.jpg' alt>
+      <div class='overlay' >
+      <a href='#popup-1' class='view-project' >
+      View Project
+      </a>
+      <div id='popup-1' class='popup-box zoom-anim-dialog mfp-hide' >
+      <figure>
+      <img src='img/portfolio/1.jpg' alt>
+      </figure>
+      <div class='content' >
+      <h4>My Project Title</h4>
+      <p>
+      Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
+      </p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </li>
+      <li data-groups='["tech","photography"]' >
+      <div class='inner' >
+      <img src='img/portfolio/2.jpg' alt>
+      <div class='overlay' >
+      <a href='#popup-2' class='view-project' >
+      View Project
+      </a>
+      <div id='popup-2' class='popup-box zoom-anim-dialog mfp-hide' >
+      <figure>
+      <img src='img/portfolio/2.jpg' alt>
+      </figure>
+      <div class='content' >
+      <h4>My Project Title</h4>
+      <p>
+      Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
+      </p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </li>
+      <li data-groups='["web","photography"]' >
+      <div class='inner' >
+      <img src='img/portfolio/3.jpg' alt>
+      <div class='overlay' >
+      <a href='#popup-3' class='view-project' >
+      View Project
+      </a>
+      <div id='popup-3' class='popup-box zoom-anim-dialog mfp-hide' >
+      <figure>
+      <img src='img/portfolio/3.jpg' alt>
+      </figure>
+      <div class='content' >
+      <h4>My Project Title</h4>
+      <p>
+      Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
+      </p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </li>
+      <li data-groups='["web"]' >
+      <div class='inner' >
+      <img src='img/portfolio/4.jpg' alt>
+      <div class='overlay' >
+      <a href='#popup-4' class='view-project' >
+      View Project
+      </a>
+      <div id='popup-4' class='popup-box zoom-anim-dialog mfp-hide' >
+      <figure>
+      <img src='img/portfolio/4.jpg' alt>
+      </figure>
+      <div class='content' >
+      <h4>My Project Title</h4>
+      <p>
+      Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
+      </p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </li>
+      <li data-groups='["tech"]' >
+      <div class='inner' >
+      <img src='img/portfolio/5.jpg' alt>
+      <div class='overlay' >
+      <a href='#popup-5' class='view-project' >
+      View Project
+      </a>
+      <div id='popup-5' class='popup-box zoom-anim-dialog mfp-hide' >
+      <figure>
+      <img src='img/portfolio/5.jpg' alt>
+      </figure>
+      <div class='content' >
+      <h4>My Project Title</h4>
+      <p>
+      Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
+      </p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </li>
+      <li data-groups='["photography"]' >
+      <div class='inner' >
+      <img src='img/portfolio/6.jpg' alt>
+      <div class='overlay' >
+      <a href='#popup-6' class='view-project' >
+      View Project
+      </a>
+      <div id='popup-6' class='popup-box zoom-anim-dialog mfp-hide' >
+      <figure>
+      <img src='img/portfolio/6.jpg' alt>
+      </figure>
+      <div class='content' >
+      <h4>My Project Title</h4>
+      <p>
+      Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
+      </p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </li>
+      </ul>
+      </div>
+      </div>
+      </section>
+    //
+      =====================================================
+      Contact Section
+      =====================================================
+    section#contact.section.contact-section.border-d
+      .section-block.contact-block
+        .container-fluid
+          .section-header
+            h2
+              | Contact 
+              strong.color Me
+          .row
+            .col-md-8
+              .contact-form
+                form#contact-form(data-toggle='validator' method='post' action='mail.php')
+                  #contact-form-result
+                  .row
+                    .col-md-6
+                      .form-group
+                        input.form-control(type='text' placeholder='Name' name='name' required='')
+                        .help-block.with-errors
+                    .col-md-6
+                      .form-group
+                        input.form-control(type='email' placeholder='Email' name='email' required='')
+                        .help-block.with-errors
+                  .form-group
+                    input.form-control(type='text' placeholder='Subject' name='subject' required='')
+                    .help-block.with-errors
+                  .form-group
+                    textarea.form-control(placeholder='Message' name='message' rows='5' required='')
+                    .help-block.with-errors
+                  .form-group.text-center
+                    button.btn-custom.btn-color(type='submit')
+                      | Send Message
+            .col-md-4
+              .contact-info-icons
+                .contact-info
+                  i.ion-ios-location-outline
+                  p
+                    | 87 H&agrave; Tr&igrave;,P. H&agrave; C&#x1EA7;u
+                    br
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;H&agrave; &Dstrok;&ocirc;ng, H&agrave; N&#x1ED9;i
+                .contact-info
+                  i.ion-ios-telephone-outline
+                  p
+                    | (+84) 834-120-699
+                    br
+                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;(+84) 936-419-218
+                .contact-info
+                  i.ion-android-globe
+                  p
+                    a(href='https://www.facebook.com/sylitas') facebook.com
+                    br
+                    a(href='https://www.instagram.com/sylitas/') instagram.com
+//
+  =====================================================
+  JavaScript Files
+  =====================================================
+script(src='js/jquery.min.js')
+script(src='js/jquery.shuffle.min.js')
+script(src='js/owl.carousel.min.js')
+script(src='js/jquery.magnific-popup.min.js')
+script(src='js/validator.min.js')
+script(src='js/script.js')
