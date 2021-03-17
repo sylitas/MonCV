@@ -54,12 +54,9 @@ head
         li
           a.section-toggle(href='#about' data-section='about')
             | About
-        //
-          <li>
-          <a href='#portfolio' class='section-toggle' data-section='portfolio' >
-          Portfolio
-          </a>
-          </li>
+        li
+          a.section-toggle(href='#portfolio' data-section='portfolio')
+            | Portfolio
         li
           a.section-toggle(href='#contact' data-section='contact')
             | Contact
@@ -108,7 +105,7 @@ head
                   span Web Developer
                 li
                   strong Age:
-                  span 21 Years
+                  span 22 Years
                 li
                   strong Residence:
                   span Vi&#x1EC7;t Nam
@@ -118,9 +115,19 @@ head
             .col-md-8
               .about-text
                 p
-                  | In 2017 I started to learn my bachelor&apos;s degree at University of Science and Technology of Ha Noi (USTH) for 3 years. While still studying, in my second year of university, I did internship at FPT Bank for 3 months, which is mainly working on database there. Then, when I finished all the credits in year 3 (final year), I applied for an internship at HTC-ITC until now.
-                p
-                  | V&agrave;o n&abreve;m 2017, t&ocirc;i b&#x1EAF;t &dstrok;&#x1EA7;u h&#x1ECD;c b&#x1EB1;ng c&#x1EED; nh&acirc;n t&#x1EA1;i tr&#x1B0;&#x1EDD;ng &dstrok;&#x1EA1;i h&#x1ECD;c Khoa H&#x1ECD;c V&agrave; C&ocirc;ng Ngh&#x1EC7; H&agrave; N&#x1ED9;i (USTH) trong v&ograve;ng 3 n&abreve;m. T&ocirc;i xin th&#x1EF1;c t&#x1EAD;p t&#x1EA1;i FPT Bank v&agrave; l&agrave;m t&#x1EA1;i &dstrok;&oacute; trong 3 th&aacute;ng tr&#x1B0;&#x1EDB;c khi n&abreve;m 3 b&#x1EAF;t &dstrok;&#x1EA7;u, c&ocirc;ng vi&#x1EC7;c ch&iacute;nh c&#x1EE7;a t&ocirc;i t&#x1EA1;i &dstrok;&oacute; l&agrave; database. Sau khi t&ocirc;i ho&agrave;n th&agrave;nh h&#x1EBF;t t&iacute;n ch&#x1EC9; trong n&abreve;m 3 t&ocirc;i &dstrok;&atilde; xin l&agrave;m vi&#x1EC7;c t&#x1EA1;i HTC-ITC v&agrave; l&agrave;m vi&#x1EC7;c t&#x1EA1;i &dstrok;&oacute; t&#x1EDB;i gi&#x1EDD; v&#x1EDB;i t&#x1B0; c&aacute;ch th&#x1EF1;c t&#x1EAD;p sinh.
+                  | In 2017, I started to learn my bachelor&apos;s degree at University of Science and Technology of Ha Noi (USTH) for 3 years. While still studying, in my second year of university, I did internship at FPT Bank for 3 months, which is mainly working on database there. Then, when I finished all the credits in year 3 (final year), I applied for an internship and now i work at HTC-ITC as software developer on web platform.
+                p 
+                  | 
+                  b Javascript 
+                  | is my main programming language also for backend like 
+                  b NodeJS 
+                  | and frontend such as 
+                  b Jquery 
+                  | ,
+                  b PugJS 
+                  | or 
+                  b Bootstrap
+                  |.
               .about-btns
                 p Fell free to
                 a.btn-custom.btn-color.btn-custom.section-toggle(href='#contact' data-section='contact')
@@ -159,191 +166,144 @@ head
               .skill
                 h4 HTML/CSS
                 .bar
-                  .percent(style='width:50%;')
-              .skill
-                h4 php
-                .bar
                   .percent(style='width:60%;')
-              .skill
-                h4 jQuery
-                .bar
-                  .percent(style='width:40%;')
-            .col-md-6
-              .skill
-                h4 JavaScript
-                .bar
-                  .percent(style='width:70%;')
               .skill
                 h4 PugJS
                 .bar
-                  .percent(style='width:40%;')
+                  .percent(style='width:55%;')
               .skill
-                h4 NodeJS
+                h4 jQuery
+                .bar
+                  .percent(style='width:55%;')
+            .col-md-6
+              .skill
+                h4 JavaScript es6
                 .bar
                   .percent(style='width:65%;')
+              .skill
+                h4 PHP x Wordpress
+                .bar
+                  .percent(style='width:40%;')
+              .skill
+                h4 NodeJS x ExpressJS
+                .bar
+                  .percent(style='width:60%;')
     //
       =====================================================
       Portfolio Section
       =====================================================
-    <section id='portfolio' class='section portfolio-section border-d' >
-      <div class='section-block portfolio-block' >
-      <div class='container-fluid' >
-      <div class='section-header' >
-      <h2>My <strong class='color' >Works</strong></h2>
-      </div>
-      <ul class='portfolio-filters' >
-      <li>
-      <a href='#' class='active' data-group='all' >
-      All
-      </a>
-      </li>
-      <li>
-      <a href='#' data-group='web' >
-      Web
-      </a>
-      </li>
-      <li>
-      <a href='#' data-group='tech' >
-      Tech
-      </a>
-      </li>
-      <li>
-      <a href='#' data-group='photography' >
-      Photography
-      </a>
-      </li>
-      </ul>
-      <ul class='portfolio-items' >
-      <li data-groups='["web","tech"]' >
-      <div class='inner' >
-      <img src='img/portfolio/1.jpg' alt>
-      <div class='overlay' >
-      <a href='#popup-1' class='view-project' >
-      View Project
-      </a>
-      <div id='popup-1' class='popup-box zoom-anim-dialog mfp-hide' >
-      <figure>
-      <img src='img/portfolio/1.jpg' alt>
-      </figure>
-      <div class='content' >
-      <h4>My Project Title</h4>
-      <p>
-      Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
-      </p>
-      </div>
-      </div>
-      </div>
-      </div>
-      </li>
-      <li data-groups='["tech","photography"]' >
-      <div class='inner' >
-      <img src='img/portfolio/2.jpg' alt>
-      <div class='overlay' >
-      <a href='#popup-2' class='view-project' >
-      View Project
-      </a>
-      <div id='popup-2' class='popup-box zoom-anim-dialog mfp-hide' >
-      <figure>
-      <img src='img/portfolio/2.jpg' alt>
-      </figure>
-      <div class='content' >
-      <h4>My Project Title</h4>
-      <p>
-      Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
-      </p>
-      </div>
-      </div>
-      </div>
-      </div>
-      </li>
-      <li data-groups='["web","photography"]' >
-      <div class='inner' >
-      <img src='img/portfolio/3.jpg' alt>
-      <div class='overlay' >
-      <a href='#popup-3' class='view-project' >
-      View Project
-      </a>
-      <div id='popup-3' class='popup-box zoom-anim-dialog mfp-hide' >
-      <figure>
-      <img src='img/portfolio/3.jpg' alt>
-      </figure>
-      <div class='content' >
-      <h4>My Project Title</h4>
-      <p>
-      Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
-      </p>
-      </div>
-      </div>
-      </div>
-      </div>
-      </li>
-      <li data-groups='["web"]' >
-      <div class='inner' >
-      <img src='img/portfolio/4.jpg' alt>
-      <div class='overlay' >
-      <a href='#popup-4' class='view-project' >
-      View Project
-      </a>
-      <div id='popup-4' class='popup-box zoom-anim-dialog mfp-hide' >
-      <figure>
-      <img src='img/portfolio/4.jpg' alt>
-      </figure>
-      <div class='content' >
-      <h4>My Project Title</h4>
-      <p>
-      Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
-      </p>
-      </div>
-      </div>
-      </div>
-      </div>
-      </li>
-      <li data-groups='["tech"]' >
-      <div class='inner' >
-      <img src='img/portfolio/5.jpg' alt>
-      <div class='overlay' >
-      <a href='#popup-5' class='view-project' >
-      View Project
-      </a>
-      <div id='popup-5' class='popup-box zoom-anim-dialog mfp-hide' >
-      <figure>
-      <img src='img/portfolio/5.jpg' alt>
-      </figure>
-      <div class='content' >
-      <h4>My Project Title</h4>
-      <p>
-      Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
-      </p>
-      </div>
-      </div>
-      </div>
-      </div>
-      </li>
-      <li data-groups='["photography"]' >
-      <div class='inner' >
-      <img src='img/portfolio/6.jpg' alt>
-      <div class='overlay' >
-      <a href='#popup-6' class='view-project' >
-      View Project
-      </a>
-      <div id='popup-6' class='popup-box zoom-anim-dialog mfp-hide' >
-      <figure>
-      <img src='img/portfolio/6.jpg' alt>
-      </figure>
-      <div class='content' >
-      <h4>My Project Title</h4>
-      <p>
-      Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
-      </p>
-      </div>
-      </div>
-      </div>
-      </div>
-      </li>
-      </ul>
-      </div>
-      </div>
-    </section>
+    section#portfolio.section.portfolio-section.border-d
+      .section-block.portfolio-block
+        .container-fluid
+          .section-header
+            h2
+              | My 
+              strong.color Works
+          ul.portfolio-filters
+            li
+              a.active(href='#' data-group='all')
+                | All
+            li
+              a(href='#' data-group='web')
+                | Web
+            li
+              a(href='#' data-group='photography')
+                | Photography
+          ul.portfolio-items
+            li(data-groups='["web"]')
+              .inner
+                img(src='img/portfolio/lcc.png' alt='')
+                .overlay
+                  a.view-project(href='#popup-1')
+                    | View Project
+                  #popup-1.popup-box.zoom-anim-dialog.mfp-hide
+                    figure
+                      img(src='img/portfolio/lcc.png' alt='')
+                    .content
+                      h4 Name
+                      b Radiologist and Image management on Lung cancer care website
+                      p 
+                        |Github: 
+                        a(href="https://github.com/sylitas/internship-project.git") https://github.com/sylitas/internship-project.git
+                      h4 Description
+                      p
+                        | The main idea here is helping doctor at CT image when locating the lung cancer on website. PHP is main programming language for creating this project. For more information, please read the report at : 
+                        a(href = "https://www.overleaf.com/read/hdrcfcwcsydz") https://www.overleaf.com/read/hdrcfcwcsydz
+            li(data-groups='["web"]')
+              .inner
+                img(src='img/portfolio/amis.png' alt='')
+                .overlay
+                  a.view-project(href='#popup-2')
+                    | View Project
+                  #popup-2.popup-box.zoom-anim-dialog.mfp-hide
+                    figure
+                      img(src='img/portfolio/amis.png' alt='')
+                    .content
+                      h4 Amis
+                      p
+                        |Github:
+                        a(href="https://github.com/sylitas/amis") https://github.com/sylitas/amis
+                      h4 Description 
+                      p - This repository is a website that cloned of amis.vn product
+                      p - For front end, whole project had been wrote by using PugJS. Also, Bootstrap is highly help in beautify the site.
+                      p - For back end, this project created at NodeJS environment by using ExpressJS as a framework. There are some function that created for it, such as :
+                      p + Authentication : Using LDAP for accessing Active Directory
+                      p + Authorization
+                      p + CRUD
+            li(data-groups='["photography"]')
+              .inner
+                img(src='img/portfolio/3.jpg' alt='')
+                .overlay
+                  a.view-project(href='#popup-3')
+                    | View 
+                  #popup-3.popup-box.zoom-anim-dialog.mfp-hide
+                    figure
+                      img(src='img/portfolio/3.jpg' alt='')
+            li(data-groups='["photography"]')
+              .inner
+                img(src='img/portfolio/4.jpg' alt='')
+                .overlay
+                  a.view-project(href='#popup-4')
+                    | View 
+                  #popup-4.popup-box.zoom-anim-dialog.mfp-hide
+                    figure
+                      img(src='img/portfolio/4.jpg' alt='')
+            li(data-groups='["photography"]')
+              .inner
+                img(src='img/portfolio/5.jpg' alt='')
+                .overlay
+                  a.view-project(href='#popup-5')
+                    | View 
+                  #popup-5.popup-box.zoom-anim-dialog.mfp-hide
+                    figure
+                      img(src='img/portfolio/5.jpg' alt='')
+            li(data-groups='["photography"]')
+              .inner
+                img(src='img/portfolio/6.jpg' alt='')
+                .overlay
+                  a.view-project(href='#popup-6')
+                    | View 
+                  #popup-6.popup-box.zoom-anim-dialog.mfp-hide
+                    figure
+                      img(src='img/portfolio/6.jpg' alt='')
+            li(data-groups='["photography"]')
+              .inner
+                img(src='img/portfolio/7.png' alt='')
+                .overlay
+                  a.view-project(href='#popup-7')
+                    | View 
+                  #popup-7.popup-box.zoom-anim-dialog.mfp-hide
+                    figure
+                      img(src='img/portfolio/7.png' alt='')
+            li(data-groups='["photography"]')
+              .inner
+                img(src='img/portfolio/8.png' alt='')
+                .overlay
+                  a.view-project(href='#popup-8')
+                    | View 
+                  #popup-8.popup-box.zoom-anim-dialog.mfp-hide
+                    figure
+                      img(src='img/portfolio/8.png' alt='')
     //
       =====================================================
       Contact Section
@@ -358,7 +318,7 @@ head
           .row
             .col-md-8
               .contact-form
-                form#contact-form(data-toggle='validator' method='post' action='mail.php')
+                form#contact-form(data-toggle='validator' method='post')
                   #contact-form-result
                   .row
                     .col-md-6
