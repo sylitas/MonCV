@@ -240,7 +240,6 @@ body.border-dark .main-content:after{
 =======================================================*/
 .section-main{
 	background-size:cover;
-	background-image:url(../img/bg.jpg);
 }
 .section-main:before{
 	content: ' ';

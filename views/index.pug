@@ -9,6 +9,7 @@ head
     =====================================================
     CSS Stylesheets
     =====================================================
+  link(rel="shortcut icon" type="image/jpg" href="img/img.ico")
   link(rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css')
   link(rel='stylesheet' type='text/css' href='css/linea.css')
   link(rel='stylesheet' type='text/css' href='css/ionicons.min.css')
@@ -83,6 +84,8 @@ head
                   | Discover More
                 a.btn-custom.section-toggle(href='#contact' data-section='contact')
                   | Contact Me
+                a.btn-custom.section-toggle(href='#portfolio' data-section='portfolio')
+                  | Portfolio
     //
       =====================================================
       About Section
@@ -128,13 +131,10 @@ head
                   | or 
                   b Bootstrap
                   |.
-              .about-btns
-                p Feel free to
-                a.btn-custom.btn-color.btn-custom.section-toggle(href='#contact' data-section='contact')
-                  | Contact Me
-                p See my work
-                a.btn-custom.btn-color.btn-custom.section-toggle(href='#portfolio' data-section='portfolio')
-                  | Portfolio
+                p Feel Free to
+                .intro-btns
+                  a.btn-custom.btn-color.btn-custom.section-toggle(href='#contact' data-section='contact')
+                    | Contact Me
       .section-block.services-block
         .container-fluid
           .section-header
