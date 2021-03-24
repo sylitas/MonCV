@@ -223,6 +223,15 @@ head
               a(href='#' data-group='photography')
                 | Photography
           ul.portfolio-items
+            li(data-groups='["photography"]')
+              .inner
+                img(src='img/portfolio/7.png' alt='')
+                .overlay
+                  a.view-project(href='#popup-7')
+                    | View 
+                  #popup-7.popup-box.zoom-anim-dialog.mfp-hide
+                    figure
+                      img(src='img/portfolio/7.png' alt='')
             li(data-groups='["web"]')
               .inner
                 img(src='img/portfolio/lcc.png' alt='')
@@ -262,8 +271,7 @@ head
                       p - For back end, this project created at NodeJS environment by using ExpressJS as a framework. There are some function that created for it, such as :
                       p + Authentication : Using LDAP for accessing Active Directory
                       p + Authorization
-                      p + CRUD
-            
+                      p + CRUD            
             li(data-groups='["photography"]')
               .inner
                 img(src='img/portfolio/3.jpg' alt='')
@@ -300,15 +308,6 @@ head
                   #popup-6.popup-box.zoom-anim-dialog.mfp-hide
                     figure
                       img(src='img/portfolio/6.jpg' alt='')
-            li(data-groups='["photography"]')
-              .inner
-                img(src='img/portfolio/7.png' alt='')
-                .overlay
-                  a.view-project(href='#popup-7')
-                    | View 
-                  #popup-7.popup-box.zoom-anim-dialog.mfp-hide
-                    figure
-                      img(src='img/portfolio/7.png' alt='')
             li(data-groups='["photography"]')
               .inner
                 img(src='img/portfolio/8.png' alt='')
