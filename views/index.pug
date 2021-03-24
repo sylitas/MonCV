@@ -16,6 +16,8 @@ head
   link(rel='stylesheet' type='text/css' href='css/owl.carousel.css')
   link(rel='stylesheet' type='text/css' href='css/magnific-popup.css')
   link(rel='stylesheet' type='text/css' href='css/style.css')
+  script(src='https://code.jquery.com/jquery-3.6.0.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous')
+  script(src='jquery/homepage.jquery.js')
 //
   =====================================================
   Preloader
@@ -56,7 +58,7 @@ head
           a.section-toggle(href='#about' data-section='about')
             | About
         li
-          a.section-toggle(href='#portfolio' data-section='portfolio')
+          a.clickedPortfolio.section-toggle(href='#portfolio' data-section='portfolio')
             | Portfolio
         li
           a.section-toggle(href='#contact' data-section='contact')
@@ -78,14 +80,14 @@ head
             .intro-text
               h1 My name&apos;s Duy
               p
-                | I&apos;m a Web Developer and also a Photographer
+                | I&apos;m a Web Developer and a Photographer
               .intro-btns
                 a.btn-custom.section-toggle(href='#about' data-section='about')
                   | Discover More
+                a.clickedPortfolio.btn-custom.section-toggle(href='#portfolio' data-section='portfolio')
+                  | Portfolio
                 a.btn-custom.section-toggle(href='#contact' data-section='contact')
                   | Contact Me
-                a.btn-custom.section-toggle(href='#portfolio' data-section='portfolio')
-                  | Portfolio
     //
       =====================================================
       About Section
@@ -108,7 +110,7 @@ head
                   span Web Developer
                 li
                   strong Age:
-                  span 22 Years
+                  span 22
                 li
                   strong Residence:
                   span Vi&#x1EC7;t Nam
@@ -118,19 +120,20 @@ head
             .col-md-8
               .about-text
                 p
-                  | In 2017, I started my bachelor degree at University of Science and Technology of Hanoi (USTH). During my second year of college, I had an internship at FPT Bank and mainly working with the database. I graduated in 2020 and now currently working at HTC-ITC as a web-based software developer.
-                p 
+                  | In 2017, I started my bachelor degree of Information Communication Technology (ICT) at University of Science and Technology of Hanoi (USTH). During second year of university, I did an internship at FPT Information System participated in a project named OFSAA. My main task was engaging with database involving mapping and testing.
+                p
+                  | Before graduating, I attended another project called Lung Cancer Care at ICTLab of university. In three months, I finished a website allowing doctors access into imaging data storage. It supports full logging interface and helps users with managing image data such as CT images or .dicom files, direct-viewing and simple image processing, for example, noting at each image, calculating space from two point by milimeter, changing image color negative image, Etc.
+                p  More detail
+                .intro-btns 
+                  a.btn-custom.btn-color.btn-custom.section-toggle(href='#portfolio' data-section='portfolio')
+                    | Portfolio
+                br
+                p
+                  | Now i'm currently worked at HTC-ITC as a web-based software developer.
+                p Because
                   | 
                   b Javascript 
-                  | is my main programming language also for backend like 
-                  b NodeJS 
-                  | and frontend such as 
-                  b Jquery 
-                  | ,
-                  b PugJS 
-                  | or 
-                  b Bootstrap
-                  |.
+                  | is a powerful programming language so i have experience in both frontend(HTML, CSS, JS ,PugJS ,VueJS) and backend (PHP, JS, NodeJs, ExpressJS) languages or framework. However, i am focusing on backend more than anything else.
                 p Feel Free to
                 .intro-btns
                   a.btn-custom.btn-color.btn-custom.section-toggle(href='#contact' data-section='contact')
@@ -149,7 +152,10 @@ head
                 .content
                   h4 Photography
                   p
-                    | Because of having a Pentax K-5 with lens macro, i&apos;d like portrait and food photography than anything else
+                    | Since I am an out-going person and really fond of food presentation, instead of choosing normal lenses, I own Pentax K-5 with len macro. It helps me shoot better food plates and portraits than scenery and outdoor activities
+                  .intro-btns 
+                    a.btn-custom.btn-color.btn-custom.section-toggle(href='#portfolio' data-section='portfolio')
+                      | Portfolio
             .col-md-6
               .service
                 .icon
@@ -157,7 +163,7 @@ head
                 .content
                   h4 Programming
                   p
-                    | I can using some progamming like C, C++, Java, Python, PHP, Javascript. However, designing something which is logically, wonderful and beautiful is my dream job. That is the reason why i forcus more on PHP and Javascript. Some other make-up language like HTML, PUG, CSS that help me a lot when doing at front end.
+                    | Different from photography, I love creating products with (highly) practical capabilities for personal or general usage. Coding is what I am looking for. I like the sense of achievement after solving a problem requiring deep learning and seeking for knowledge of other people, which makes programming not only a career but also a passion.
       .section-block.skills-block
         .container-fluid
           .section-header
@@ -253,6 +259,7 @@ head
                       p + Authentication : Using LDAP for accessing Active Directory
                       p + Authorization
                       p + CRUD
+            
             li(data-groups='["photography"]')
               .inner
                 img(src='img/portfolio/3.jpg' alt='')
@@ -340,13 +347,13 @@ head
                     .help-block.with-errors
                   .form-group.text-center
                     button.btn-custom.btn-color(type='submit')
-                      | Send Message
+                      | Send
             .col-md-4
               .contact-info-icons
                 .contact-info
                   i.ion-ios-location-outline
                   p
-                    | 87 H&agrave; Tr&igrave;,P. H&agrave; C&#x1EA7;u
+                    | 87 H&agrave; Tr&igrave;, P. H&agrave; C&#x1EA7;u
                     br
                     | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;H&agrave; &Dstrok;&ocirc;ng, H&agrave; N&#x1ED9;i
                 .contact-info
